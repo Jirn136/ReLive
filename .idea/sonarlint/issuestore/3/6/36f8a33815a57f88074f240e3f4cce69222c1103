@@ -1,0 +1,16 @@
+
+s
+java:S1450"VRemove the "imgView" field and declare it as a local variable in the relevant methods.(£Ëˆ8¤ÿô’.
+{	java:S116"ZRename this field "PERMISSION_CODE" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(”ú–›ûÿÿÿÿ8ú§ “.
+H
+java:S1068"+Remove this unused "edtDesc" private field.(Ñ‹˜‹8ºÿî’.
+H
+java:S1068"+Remove this unused "imgView" private field.(£Ëˆ8²ûë’.
+a
+java:S1128"?Remove this unused import 'androidx.appcompat.app.AlertDialog'.(¼Ìï¨üÿÿÿÿ8”À½“.
+^
+java:S1128	"<Remove this unused import 'android.content.DialogInterface'.(Š­›¨şÿÿÿÿ8”À½“.
+U
+java:S1068"3Remove this unused "PERMISSION_CODE" private field.(”ú–›ûÿÿÿÿ8ú§ “.
+L
+java:S10662"/Merge this if statement with the enclosing one.(¿é…ó8ÊíÄ“.

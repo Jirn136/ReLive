@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "931414658554",
+    "firebase_url": "https://chatui-3655a.firebaseio.com",
+    "project_id": "chatui-3655a",
+    "storage_bucket": "chatui-3655a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:931414658554:android:27a27bbf17863f99a02843",
+        "android_client_info": {
+          "package_name": "com.example.chatui"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "931414658554-au483mmkgaktlmn71duf6f5s3oaapi7m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCSjN0qMLl6yFhoq6Ya33qbmbzOwdzqwUM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "931414658554-au483mmkgaktlmn71duf6f5s3oaapi7m.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

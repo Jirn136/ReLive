@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">ChatUi</string>
+    <string name="chat_with_people_near_with_you">Chat with people near with you.</string>
+    <string name="create_account">Create account</string>
+    <string name="have_an_account_already">have an account already?</string>
+    <string name="log_in">Log in</string>
+    <string name="enter_username">Enter username</string>
+    <string name="enter_email_id">Enter Email id</string>
+    <string name="enter_password">Enter Password</string>
+    <string name="re_enter_password">Re-enter Password</string>
+    <string name="signup">SignUp</string>
+    <string name="sign_up"><i>SignUp</i></string>
+
+
+    <string name="facebook_app_id">828072851043132</string>
+    <string name="fb_login_protocol_scheme">fb828072851043132</string>
+    <string name="live_your_moment_again">Live your moment again.</string>
+    <string name="enter_description">Enter Description</string>
+    <string name="from_gallery">From Gallery</string>
+    <string name="take_a_picture">Take a picture</string>
+    <string name="upload_memory">Upload Memory</string>
+</resources>

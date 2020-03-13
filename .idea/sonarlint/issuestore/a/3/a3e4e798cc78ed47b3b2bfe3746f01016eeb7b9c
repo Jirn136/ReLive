@@ -1,0 +1,13 @@
+
+G
+java:S1659"*Declare "edtCPassword" on a separate line.(¦Ó¾˜8†ÖÛÂŒ.
+C
+java:S1659"&Declare "edtEmail" on a separate line.(¦Ó¾˜8¨²ÛÂŒ.
+F
+java:S1659")Declare "edtPassword" on a separate line.(¦Ó¾˜8¨²ÛÂŒ.
+w
+java:S1450"ZRemove the "edtPassword" field and declare it as a local variable in the relevant methods.(¦Ó¾˜8ãêÂŒ.
+x
+java:S1450"[Remove the "edtCPassword" field and declare it as a local variable in the relevant methods.(¦Ó¾˜8ãêÂŒ.
+u
+java:S1450"XRemove the "btnSignup" field and declare it as a local variable in the relevant methods.(ÚÛŒÔ8ãêÂŒ.
