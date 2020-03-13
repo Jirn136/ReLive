@@ -25,11 +25,8 @@ import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
-import com.google.firebase.database.DataSnapshot;
-import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
-import com.google.firebase.database.ValueEventListener;
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.UploadTask;
@@ -59,12 +56,11 @@ public class UploadData extends AppCompatActivity implements View.OnClickListene
         setContentView(R.layout.activity_upload_data);
 
         widgetDeclaration();
+
         user = FirebaseAuth.getInstance().getCurrentUser();
         reference = FirebaseStorage.getInstance().getReference();
 
-        assert user.getDisplayName() != null;
         databaseReference = FirebaseDatabase.getInstance().getReference();
-
 
         btnTakePic.setOnClickListener(this);
         btnFromGallery.setOnClickListener(this);
@@ -76,7 +72,6 @@ public class UploadData extends AppCompatActivity implements View.OnClickListene
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.btn_gallery:
-
                 if (ContextCompat.checkSelfPermission(this, Manifest.permission.READ_EXTERNAL_STORAGE)
                         == PackageManager.PERMISSION_GRANTED) {
                     takeFromGallery();
@@ -184,7 +179,8 @@ public class UploadData extends AppCompatActivity implements View.OnClickListene
         uploadTask.addOnFailureListener(new OnFailureListener() {
             @Override
             public void onFailure(@NonNull Exception e) {
-                Log.i("TAG", e.getMessage());
+                if(e.getMessage()!=null)
+                    Log.i("TAG", e.getMessage());
             }
         }).addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
             @Override

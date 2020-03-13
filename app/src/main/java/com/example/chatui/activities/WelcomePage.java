@@ -45,8 +45,7 @@ public class WelcomePage extends AppCompatActivity implements View.OnClickListen
 
         LoginButton btnFb = findViewById(R.id.btnFb);
 
-        btnFb.setReadPermissions("email", "public_profile");
-
+        btnFb.setPermissions("email", "public_profile");
 
         btnFb.registerCallback(manager, new FacebookCallback<LoginResult>() {
             @Override
@@ -61,7 +60,8 @@ public class WelcomePage extends AppCompatActivity implements View.OnClickListen
 
             @Override
             public void onError(FacebookException error) {
-                Log.i("TAG", error.getMessage());
+                if (error.getMessage() != null)
+                    Log.i("TAG", error.getMessage());
             }
         });
 
@@ -96,6 +96,7 @@ public class WelcomePage extends AppCompatActivity implements View.OnClickListen
             boolean isLoggedIn = accessToken != null && !accessToken.isExpired();
 
             if (isLoggedIn) {
+                Toast.makeText(this, "Welcome " + name, Toast.LENGTH_SHORT).show();
                 startActivity(new Intent(this, UploadData.class));
                 finish();
             } else {
@@ -116,9 +117,6 @@ public class WelcomePage extends AppCompatActivity implements View.OnClickListen
             case R.id.txtLogin:
                 Toast.makeText(this, "in progress", Toast.LENGTH_SHORT).show();
                 break;
-//            case R.id.btnFb:
-//                handleAccessToken(accessToken);
-//                break;
             default:
                 Toast.makeText(this, "No such method.", Toast.LENGTH_SHORT).show();
         }
